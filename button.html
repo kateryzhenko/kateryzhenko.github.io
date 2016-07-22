@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/Javascript"> 
+        function sayhello(){
+            alert ('nakonezto')
+        }
+        
+        function moveright(){
+            redball.left = redball.left - 10;
+            }
+            
+        function moveleft(){
+            redball.left = redball.left + 10;
+            }
+            
+            
+             function moveUpper() {
+            redball.top=redball.top-10
+             }
+             
+              function moveDown() {
+           redball.top = redball.top +10
+         }
+  
+        
+            function moveUpperRight() {
+            redball.top=redball.top-10
+            redball.left=redball.left+10
+             }
+             
+             function moveUpperLeft() {
+            redball.top=redball.top-10
+            redball.left=redball.left-10
+             }
+             
+             function moveDownRight() {
+                 var i;
+                 for(i=0; i<10; i++){
+                    redball.top++;
+                    redball.left=redball.left+1;
+                 }
+          
+             }
+             
+             function moveDownLeft() {
+            redball.top=redball.top+10
+            redball.left=redball.left-10
+             }
+        
+        </script>
+        
+    
+        
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+        
+        
+    </head>
+    
+        <body>
+        
+           
+        <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"></img>
+        
+        <button onclick="moveright()">
+            <p>&#x2190;</p>
+        </button>
+        
+        <button onclick="moveleft()">
+            <p>&#x2192;</p>
+        </button>
+        
+          <button onclick="moveUpper()"><p>&#x2191;</p></button>
+        </body>
+        
+        <button onclick="moveDown()"><p>&#x2193;</p></button>
+       
+        
+        <button onclick="moveUpperRight()"><p>UpRight</p></button>
+        <button onclick="moveUpperLeft()"><p>UpLeft</p></button>
+        <button onclick="moveDownRight()"><p>DownRight</p></button>
+        <button onclick="moveDownLeft()"><p>DownLeft</p></button>
+         </body>
+</html>
+
+
+

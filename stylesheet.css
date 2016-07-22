@@ -1,0 +1,111 @@
+body {
+    background-color: #f0f0f5;
+    text-decoration: none;
+}
+#header {
+	font-family: Verdana;
+    background-color: #9494b8;
+    color:white;
+    text-align:center;
+    padding:3px;
+}
+
+#header h2 {
+    margin-bottom: -15px;
+}
+
+
+#navbar {
+    line-height:30px;
+    background-color: #d1d1e0;
+    height:62px;
+    width:100%;
+    float:left;
+    padding:0; 
+    margin: auto;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5c5c8a;
+}
+
+#navbar li {
+    
+    float: left;
+}
+
+#navbar li a {
+	font-family: Verdana;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li  a:hover {
+    background-color: #33334d;
+}
+
+.active {
+    background-color: #33334d;
+} 
+
+#gallery {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#gallery li{
+	float:center; /*the image takes only 45% of the width skreen*/
+	margin: 10% 20% 10% 20%;/* each image has 2.5% margin around*/
+	background-color: #d1d1e0;
+	color: #bdc3c7;
+}
+
+img {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    display:inline-block;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+	padding: 3% 0 3% 6%;
+	font-size: 14px;
+	color: #7575a3;
+}
+
+#footer {
+    padding: 20px 0 20px 0;
+	background-color: #1f1f2e;
+    color: #8585ad;
+    clear:both;
+    text-align:center;
+}
+
+.social-icon {
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+#links {
+    margin-bottom: 20px;
+    margin-right: 575px;
+    float: right;
+}
+
+
+
+
+
