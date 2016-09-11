@@ -1,0 +1,156 @@
+<!DOCTTYPE html> 
+<html>
+    <head> 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+       
+        <style> 
+        #redball {
+           position:absolute;
+        }
+        </style>
+       
+       <script> 
+        function pfadeOut(){
+                 var myparagraph=$("#taksa, #redball");
+            myparagraph.fadeOut();
+            }
+           
+           function pfadeIn(){
+                var myparagraph=$("#taksa, #redball");
+                myparagraph.fadeIn();
+            }
+            
+            function moveup(){
+                 var ball=$("#redball");
+                 ball.animate({"top":"-=20"},100,"linear");
+            }
+            function movedown(){
+                 var ball=$("#redball");
+                 ball.animate({"top":"+=20"},200,"linear");
+            }
+             function moveright(){
+               var ball=$("#redball");
+               ball.animate({"left":"+=20"},80,"linear");
+           }
+           function moveleft(){
+               var ball=$("#redball");
+               ball.animate({"left":"-=20"},80,"linear");
+           }
+          function moveupperright(){
+               var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"-=10"},70,"linear");
+           }
+           
+           function moveupperleft(){
+               var ball=$("#redball");
+               ball.animate({"left":"-=25", "top":"-=20"},70,"linear");
+           }
+           function movedownleft(){
+               var ball=$("#redball");
+               ball.animate({"left":"-=25", "top":"+=20"},70,"linear");
+           }
+           function movedownright(){
+               var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"+=35"},50,"linear");
+           }
+           function movetriangle(){
+               var ball=$("#redball");
+               ball.animate({"left":"-=15"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"+=15", "top":"-=10"},1000,"linear");
+               
+                var ball=$("#redball");
+               ball.animate({"left":"+=15", "top":"+=10"},1000,"linear");
+           }
+           function movesquare(){
+               var ball=$("#redball");
+               ball.animate({"left":"-=25"},1000,"linear");
+               
+               var ball=$("#redball");
+                 ball.animate({"top":"-=25"},1000,"linear");
+                 
+                var ball=$("#redball");
+               ball.animate({"left":"+=25"},1000,"linear");
+               
+                var ball=$("#redball");
+                 ball.animate({"top":"+=25"},1000,"linear");
+            }
+            function moveoctagon (){
+                
+                 var ball=$("#redball");
+               ball.animate({"left":"-=15"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"-=20", "top":"-=20"},1000,"linear");
+               
+               var ball=$("#redball");
+                 ball.animate({"top":"-=20"},1000,"linear");
+             
+             var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"-=10"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"+=20"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"+=20"},1000,"linear");
+               
+               var ball=$("#redball");
+                 ball.animate({"top":"+=20"},1000,"linear");
+                 
+                 var ball=$("#redball");
+               ball.animate({"left":"-=25", "top":"+=20"},1000,"linear");
+           }
+                 
+             function movehexagon (){
+                 var ball=$("#redball");
+               ball.animate({"left":"-=25"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"-=20", "top":"-=20"},1000,"linear");
+             
+               var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"-=10"},1000,"linear");
+            
+               var ball=$("#redball");
+               ball.animate({"left":"+=25"},1000,"linear");
+               
+               var ball=$("#redball");
+               ball.animate({"left":"+=20", "top":"+=20"},1000,"linear");
+             
+                 var ball=$("#redball");
+               ball.animate({"left":"-=25", "top":"+=20"},1000,"linear");
+             }  
+ 
+    </script>
+      </head>  
+    <body> 
+   
+         <p id="taksa">First Paragraph</p>
+         <p>Second Paragraph</p>
+        
+
+  <p>
+                <button onclick="pfadeOut()">Fade Out</button>
+                <button onclick="pfadeIn()">Fade In</button>
+                  
+            
+<button onclick="moveright()">&#x2192;</button>
+<button onclick="moveleft()">&#x2190;</button>
+<button onclick="moveup()">&#x2191;</button>
+<button onclick="movedown()">&#x2193;</button>
+<button onclick="moveupperright()">Up Right</button>
+<button onclick="moveupperleft()">Up Left</button>
+<button onclick="movedownleft()">down left</button>
+<button onclick="movedownright()">down right</button>
+<button onclick="movesquare()">Square</button>
+<button onclick="movetriangle()">Triangle</button>
+<button onclick="moveoctagon()">Octagon</button>
+<button onclick="movehexagon()">Hexagon</button>
+  
+  
+  
+  <img height=30 id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"></img>
+</body> 
+</html> 
